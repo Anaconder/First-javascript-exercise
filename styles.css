@@ -1,0 +1,61 @@
+/* Boilerplate CSS Code to make my life easier */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: var(--lightBlue);
+  /* This is where you would include fonts */
+}
+
+/* Make sure all decendants inherit border-box */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Custom CSS Color Variables */
+:root {
+  --darkBlue: #1a2a80;
+  --lightBlue: #3b38a0;
+  --babyBlue: #7a85c1;
+  --lightPurple: #b2b0e8;
+}
+
+/* Nav CSS */
+nav {
+  background-color: var(--lightPurple);
+  padding: 1rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  color: var(--lightPurple);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--darkBlue);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+nav li a:hover {
+  background-color: var(--lightBlue);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
