@@ -114,3 +114,4 @@ console.log(`How long will the trip take, in hours at 75mph? ${time1} hours`);
 
 
 // Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip
+console.log('It will make the most sense to travel at 60mph');
